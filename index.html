@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- TIP CALCULATOR HEADER-->
+  <div class="app">
+    <div class="calculator">
+      <header>
+        <h1>Tip Calculator</h1>
+      </header>
+
+      <!-- BILL AMOUNT-->
+      <main>
+        <section class="options">
+          <div class="input-group">
+            <div class="pre">MDL</div>
+            <input type="number" class="cost" placeholder="bill amount" id='cost-id'/>
+          </div>
+
+          <!--SERVICE LEVEL-->
+          <p class="srv">Service level</p>
+          <div class="input-group">
+              <form class="service" id='service-id'>
+                  <input type="radio" name="service-level" id="Outstanding" value="30"'>
+                  <label for="Outstanding">Outstanding</label><br>
+                
+                  <input type="radio" name="service-level" id="Good" value="20" >
+                  <label for="Good">Good</label><br>
+                
+                  <input type="radio" name="service-level" id="OKish" value="15" >
+                  <label for="OKish">OKish</label><br>
+                
+                  <input type="radio" name="service-level" id="Bad" value="10" >
+                  <label for="Bad">Bad</label><br>
+                
+                  <input type="radio" name="service-level" id="Never" value="0" >
+                  <label for="Never">Never coming back</label><br>
+                
+              </form>
+          </div>
+        
+          <!-- NUMBER OF PERSONS -->
+          <div class="input-group">
+            <select class="people" id='people-id' required">
+              <option disabled selected>Number of persons</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <!-- CALCULATE TIP -->
+        </section>
+        <section class="tip-wrap">
+          <p class="mdl">You should tip</p>
+          <h3 class="tip">0MDL</h3>
+        </section>
+      </main>
+
+      <footer>
+        <button onClick=calcTip()>CALCULATE</button>
+      </footer>
+    </div>
+  </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

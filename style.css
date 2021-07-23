@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TIP CALCULATOR HEADER */
+.app {
+  position: relative;
+  width: 100%;
+  max-width: 475px;
+  background: #fff;
+  border-radius: 16px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.app::after {
+  content: "";
+  display: block;
+  padding-top: calc(100% / (3 / 4));
+}
+
+.calculator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100%;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #31383f;
+  padding: 10px 15px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* BILL AMOUNT */
+main {
+  flex: 1 1 100%;
+  overflow: scroll;
+  padding: 20px 15px;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.pre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  color: #31383f;
+  font-size: 18px;
+  border-bottom: 2px solid #31383f;
+  background: #eeeeee;
+  border-radius: 8px 0px 0px 0px;
+}
+
+/* TIP CALCULATOR HEADER */
+input[type="number"] {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border-bottom: 2px solid #31383f;
+  color: #31383f;
+  font-size: 18px;
+}
+
+input::placeholder {
+  color: #8e959e;
+  font-size: 14px;
+}
+
+p.srv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #31383f;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.service {
+  border: none;
+  outline: none;
+  background: none;
+  display: block;
+  width: 100%;
+  padding: 10px 15px 10px 15px;
+  height: 165px;
+}
+
+input[type="radio"] {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  position: relative;
+  color: #31383f;
+  font-size: 14px;
+  padding: 2px 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+label::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  color: #5cdb95;
+  border: 2px solid #31383f;
+  border-radius: 12px;
+  margin-right: 4px;
+}
+
+input[type="radio"]:checked + label {
+  color: #5cdb95;
+  font-size: 16px;
+}
+
+input[type="radio"]:checked + label::before {
+  height: 9px;
+  width: 9px;
+  border: 3px solid #5cdb95;
+  color: #5cdb95;
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #31383f;
+  border-radius: 0px;
+  color: #8e959e;
+  font-size: 14px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.tip-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p.mdl {
+  color: #31383f;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.tip {
+  padding: 15px 25px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  background-color: #31383f;
+  color: #fff;
+  cursor: default;
+}
+
+footer {
+  box-shadow: 0px -3px 12px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #5cdb95;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
